@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reward Yourself</title>
+    <link rel="stylesheet" href="customText.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="side-bar-container bars-container">
+      <div class="left-bar bar">
+    <h2>Motivation</h2>
+    <div id="left-quotes" class="quotes"></div>
+  </div>
+  <div class="center-bar bar">
+    <h2>Focus</h2>
+    <div id="center-quotes" class="quotes"></div>
+  </div>
+  <div class="right-bar bar">
+    <h2>Accountability</h2>
+    <div id="right-quotes" class="quotes"></div>
+  </div>
+    </div>
+    <div class="container">
+      <div class="image-grid" id="imageGrid">
+        <div>
+          <img
+            src="https://i.pinimg.com/736x/a0/0d/56/a00d5633f01493daac7e2b304645104c.jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div>
+          <img
+            src="https://i.pinimg.com/736x/38/ed/3e/38ed3e56f587af26d9e5ff90ebfd6e4b.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div>
+          <img
+            src="https://i.pinimg.com/736x/55/80/10/558010039fc001b35b0632e8c8407f16.jpg"
+            alt="Image 3"
+          />
+        </div>
+        <div>
+          <video class="video-wrapper" controls>
+            <source src="./src/video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div>
+          <img
+            src="https://i.pinimg.com/736x/dd/35/1f/dd351f01414c764ac86d16d6cdd73a95.jpg"
+            alt="Image 4"
+          />
+        </div>
+        <div>
+          <video class="video-wrapper" controls>
+            <source src="src/video2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="xp-display-container">
+        <div class="textStyled-container">
+        <h1>
+          console</span>.</span
+          ><span style="color: #61afef">log</span>("
+        </h1>
+        <div class="string">
+          <h1 class="greeting en">Study!</h1>
+          <h1 class="greeting es">Please!</h1>
+          <h1 class="greeting de">study!</h1>
+          <h1 class="greeting it">please😳!</h1>
+        </div>
+        <h1 class="closure">");</h1>
+      </div>
+        <p id="xp-display" class="xp-display">XP: 0</p>
+      </div>
+
+      <hr />
+      <div class="graph-container"><canvas id="subjectsChart" width="400" height="200"></canvas></div>
+
+      <div id="subjects">
+        <!-- Subject sections will be dynamically added here -->
+      </div>
+
+      <div class="add-chapter-section">
+        <div class="form-section">
+          <h3>Add Chapter:</h3>
+          <select id="subject-select" class="input"></select>
+          <div class="input-container">
+            <input
+              type="text"
+              id="new-chapter"
+              class="input"
+              placeholder="Enter chapter name..."
+            />
+          </div>
+          <button class="button" onclick="addChapter()">Add Chapter</button>
+        </div>
+
+        <div class="form-section">
+          <h3>Add Subject:</h3>
+          <div class="input-container">
+            <input
+              type="text"
+              id="new-subject"
+              class="input"
+              placeholder="Add new subject..."
+            />
+          </div>
+          <button class="button" onclick="addSubject()">Add Subject</button>
+        </div>
+      </div>
+
+      <div class="undo-section">
+        <button id="undo-button" onclick="undoAction()" disabled>Undo</button>
+      </div>
+    </div>
+
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  
+</script>
+    <script src="./script.js"></script>
+    
+  </body>
+</html>
