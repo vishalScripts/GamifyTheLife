@@ -352,3 +352,14 @@ window.onload = () => {
   playOnHover();
   updateChart();
 };
+
+const newChapterInput = document.getElementById("new-chapter");
+const newSubInput = document.getElementById("new-subject");
+
+newChapterInput.addEventListener("keydown", (e) => {
+  e.preventDefault;
+  console.log(e.key);
+  if (e.key === "Enter") {
+    addChapter();
+  }
+});
